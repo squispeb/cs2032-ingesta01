@@ -14,7 +14,7 @@ def get_env(name, default=None, required=False):
 
 
 def main():
-    mysql_host = get_env("MYSQL_HOST", "3.90.112.210")
+    mysql_host = get_env("MYSQL_HOST", "172.31.34.44")
     mysql_port = int(get_env("MYSQL_PORT", "8005"))
     mysql_user = get_env("MYSQL_USER", required=True)
     mysql_password = get_env("MYSQL_PASSWORD", required=True)
