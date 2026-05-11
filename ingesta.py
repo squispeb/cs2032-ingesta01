@@ -21,7 +21,7 @@ def main():
     mysql_database = get_env("MYSQL_DATABASE", required=True)
     mysql_table = get_env("MYSQL_TABLE", required=True)
     csv_file = get_env("CSV_FILE", "data.csv")
-    s3_bucket = get_env("S3_BUCKET", "gcr-output-01")
+    s3_bucket = get_env("S3_BUCKET", "squispeb-output-01")
     s3_key = get_env("S3_KEY", os.path.basename(csv_file))
 
     if not re.fullmatch(r"[A-Za-z0-9_]+(?:\.[A-Za-z0-9_]+)?", mysql_table):
